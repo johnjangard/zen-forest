@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#apiCall {
+    animation: quoteFadeIn ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes quoteFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+    .flick-1 {
+        transform-box: fill-box;
+      transform-origin: 10% 0%;
+      animation: flick 20s linear infinite;
+      animation-delay: 3s;
+      opacity: 0;
+     
+    }
+
+    .flick-2 {
+        transform-box: fill-box;
+      transform-origin: 10% 0%;
+      animation: flick 10s linear infinite;
+      animation-delay: 9s;
+      opacity: 0;
+     
+    }
+
+    .flick-3 {
+        transform-box: fill-box;
+      transform-origin: 10% 0%;
+      animation: flick 30s linear infinite;
+      animation-delay: 12s;
+      opacity: 0;
+     
+    }
+
+        .flick-4 {
+        transform-box: fill-box;
+      transform-origin: 10% 0%;
+      animation: flick 15s linear infinite;
+      animation-delay: 8s;
+      opacity: 0;
+     
+    }
+
+        .flick-5 {
+        transform-box: fill-box;
+      transform-origin: 10% 0%;
+      animation: flick 25s linear infinite;
+      animation-delay: 5s;
+      opacity: 0;
+     
+    }
+    
+
+    @keyframes flick {
+      0% {
+        transform: translate(0%, 0%);
+        opacity: 0;
+     
+      }
+
+      25% {
+
+        opacity: 1;
+
+      }
+
+      50% {
+        transform: translate(75%, 0%);
+        opacity: 1;
+
+      }
+
+      75% {
+
+        opacity: 0;
+
+      }
+
+      100% {
+        transform: translate(125%, 0%);
+        opacity: 0;
+
+  
+      }
+    }
+
+
